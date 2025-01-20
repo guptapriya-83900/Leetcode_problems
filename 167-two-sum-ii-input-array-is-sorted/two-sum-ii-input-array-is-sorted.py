@@ -6,7 +6,6 @@ class Solution(object):
         :rtype: List[int]
         """
         l, r = 0, len(numbers)-1
-        res=[]
         while l<r:
             current_sum = numbers[l]+numbers[r]
             if current_sum==target:
