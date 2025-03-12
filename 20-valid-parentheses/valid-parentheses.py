@@ -2,10 +2,6 @@ class Solution:
     def isValid(self, s: str) -> bool:
         dic={ ")" : "(", "]" : "[", "}" : "{" }
         stack=[]
-        
-        if len(s)%2!=0:
-            return False
-        
 
         for i in range(len(s)):
             if s[i] in dic:
